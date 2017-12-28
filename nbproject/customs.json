@@ -1,0 +1,10 @@
+{
+    "elements": {
+        "ion-side-menus": {},
+        "ion-side-menu": {},
+        "ion-header-bar": {},
+        "ion-content": {},
+        "ion-side-menu-content": {}
+    },
+    "attributes": {}
+}

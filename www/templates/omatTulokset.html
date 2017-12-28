@@ -1,0 +1,14 @@
+<button class="button button-positive button-full" ng-click="lisaaTulos()">Lisää tulos</button>
+<div class="tuloksetDiv">
+    <h4>Omat tulokset</h4>
+</div>
+<div class="card" ng-repeat="tulos in tulokset">
+  <div class="item item-divider item-icon-right padding">
+    {{tuloksenPvm(tulos.pvm)}}
+    <button class="button icon ion-trash-a" ng-click="poistaTulos(tulos.id)"></button>
+  </div>
+  <div class="item item-text-wrap padding">
+    Rata:<b style="margin-left:5px;">{{haeRataIdlla(tulos.radan_id)}}</b><br/>
+    Kierroksen tulos:<b style="margin-left:5px;">{{tulos.tulos}}</b>
+  </div>
+</div>

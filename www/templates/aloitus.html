@@ -1,0 +1,10 @@
+<h4>Viisi viimeisintä tulosta</h4>
+<div class="card" ng-repeat="tulos in tulokset | orderBy: '-pvm' | limitTo: 5">
+    <div class="item item-divider item-icon-right padding">
+      {{tuloksenPvm(tulos.pvm)}}
+    </div>
+    <div class="item item-text-wrap padding">
+      Rata:<b style="margin-left:5px;">{{haeRataIdlla(tulos.radan_id)}}</b><br/>
+      Kierroksen tulos:<b style="margin-left:5px;">{{tulos.tulos}}</b>
+    </div>
+</div>

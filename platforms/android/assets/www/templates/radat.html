@@ -1,0 +1,25 @@
+<button class="button button-positive button-full" ng-click="lisaaRata()">Lisää rata</button>
+<div class="tuloksetDiv">
+    <h4>Radat</h4>
+</div>
+<div class="card" ng-repeat="rata in radat">
+  <div class="item item-divider">
+    {{rata.radan_nimi}}
+  </div>
+  <div class="item item-text-wrap ">
+      <div class="row">
+          <div class="col col-50">
+              <div class="row">
+                  Väyliä: {{rata.vaylat}}
+              </div>
+              <div class="row">
+                   Par tulos: {{rata.par}}
+              </div>
+          </div>
+          <div class="col">
+              <button class="button icon ion-trash-a" ng-click="poistaRata(rata.id)" style="float:right;margin-left:3px;"></button>
+              <button class="button icon ion-edit" ng-click="muokkaaRataa(rata.id, rata.radan_nimi, rata.vaylat, rata.par)" style="float:right"></button>
+          </div>
+      </div>
+  </div>
+</div>
